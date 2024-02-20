@@ -20,8 +20,15 @@
 
 .button_container {
     display: flex;
-    // width: 30rem;
-    background-color: red;
+    margin-top: 2rem;
+    align-items: center;
 }
 
-.webgl {}
+.margin_left {
+    margin-left: 1rem;
+}
+
+
+.margin_right {
+    margin-right: 1rem;
+}
