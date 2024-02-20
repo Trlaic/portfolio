@@ -6,9 +6,9 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 const GeometryBox = () => {
 
     const canvasRef = useRef<HTMLCanvasElement>(null)
-    let mouseEnter = false
+    const mouseEnterRef = useRef(false)
     function handleMouse() {
-        mouseEnter = !mouseEnter
+        mouseEnterRef.current = !mouseEnterRef.current
     }
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const GeometryBox = () => {
 
         const tick = () => {
             const elapsedTime = clock.getElapsedTime()
-            if(!mouseEnter) mesh.rotation.y = elapsedTime * 1.5
+            if(!mouseEnterRef.current) mesh.rotation.y = elapsedTime * 1.5
 
             controls.update()
         
