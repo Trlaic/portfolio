@@ -3,8 +3,11 @@
 .container {
     background-color: $background-color-classic;
     height: 100vh;
+    overflow: hidden;
+
     display: flex;
     justify-content: center;
+    color: $color-gray-light;
 }
 
 .content {
