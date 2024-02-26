@@ -1,12 +1,22 @@
+import { Dispatch, SetStateAction } from 'react'
 import style from './ListOfProjects.module.scss'
 
-const ListOfProjects = () => {
+interface ComponentProps {
+    setActiveParagraphNumber: Dispatch<SetStateAction<number>>
+}
+
+const ListOfProjects: React.FC<ComponentProps> = ({setActiveParagraphNumber}) => {
+    
+    function handleClick() {
+        setActiveParagraphNumber(0)
+    }
+    
     return (
-        <div className={style.container}>
+        <div onClick={handleClick} className={style.container}>
             <h2 className={style.heading}>Projects</h2>
             <ul className={style.list}>
                 <li className={style.list_item}>
-                    <p className={style.paragraph}>Domposer</p>
+                    <p className={style.paragraph}>Latin</p>
                 </li>
                 <li className={style.list_item}>
                     <p className={style.paragraph}>Bay.js</p>

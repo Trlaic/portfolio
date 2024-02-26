@@ -7,6 +7,14 @@
     transform: translateY(-1rem);
 }
 
+.content {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
 .heading {
     font-size: 10rem;
     font-weight: 200;
