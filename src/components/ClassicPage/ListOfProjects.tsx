@@ -1,28 +1,34 @@
 import { Dispatch, SetStateAction } from 'react'
 import style from './ListOfProjects.module.scss'
+import { headingList } from '../../helpers/Arrays'
 
 interface ComponentProps {
+    activeParagraphNumber: number,
     setActiveParagraphNumber: Dispatch<SetStateAction<number>>
 }
 
-const ListOfProjects: React.FC<ComponentProps> = ({setActiveParagraphNumber}) => {
+const ListOfProjects: React.FC<ComponentProps> = ({setActiveParagraphNumber, activeParagraphNumber}) => {
     
-    function handleClick() {
-        setActiveParagraphNumber(0)
+    function handleClick(num: number) {
+        if(num === activeParagraphNumber) {
+            setActiveParagraphNumber(0)
+            return
+        }
+        setActiveParagraphNumber(num)
     }
     
     return (
-        <div onClick={handleClick} className={style.container}>
+        <div className={style.container}>
             <h2 className={style.heading}>Projects</h2>
             <ul className={style.list}>
                 <li className={style.list_item}>
-                    <p className={style.paragraph}>Latin</p>
+                    <p onClick={() => handleClick(1)} className={style.paragraph}>{headingList[1]}</p>
                 </li>
                 <li className={style.list_item}>
-                    <p className={style.paragraph}>Bay.js</p>
+                    <p onClick={() => handleClick(2)} className={style.paragraph}>{headingList[2]}</p>
                 </li>
                 <li className={style.list_item}>
-                    <p className={style.paragraph}>Cookiemunch</p>
+                    <p onClick={() => handleClick(3)} className={style.paragraph}>{headingList[3]}</p>
                 </li>
                 <li className={style.list_item}>
                     <p className={style.paragraph}>Screen Time Converter</p>

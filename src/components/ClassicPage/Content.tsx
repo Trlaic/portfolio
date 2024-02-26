@@ -5,13 +5,17 @@ import ListOfProjects from './ListOfProjects'
 
 const Content = () => {
 
-    const [paragraph, setParagraph] = useState(1)
+    const [paragraph, setParagraph] = useState(0)
 
+    const handleImageClick = function() {
+        setParagraph(0)
+    }
 
     return (
         <div className={style.container}>
+            <img onClick={handleImageClick} className={style.image} src="../../../src/assets/home_page.png" alt="Home" />
             <DisplayInformation activeParagraphNumber={paragraph}/>
-            <ListOfProjects setActiveParagraphNumber={setParagraph}/>
+            <ListOfProjects activeParagraphNumber={paragraph} setActiveParagraphNumber={setParagraph}/>
         </div>
         
     )

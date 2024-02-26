@@ -1,4 +1,4 @@
-import { displayInformationParagraphsArray } from '../../helpers/Arrays'
+import { displayInformationParagraphsArray, headingList } from '../../helpers/Arrays'
 import style from './DisplayInformation.module.scss'
 
 interface ComponentProps {
@@ -12,25 +12,35 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
         if(activeParagraphNumber === index) {
             hidden = false
         }
-        const className = hidden ? `${style.paragraphs} ${style.hidden}` : `${style.paragraphs}`
+        const classNameParagraphs = hidden ? `${style.paragraphs} ${style.hidden}` : `${style.paragraphs}`
+        const classNameHeadingOne = hidden ? `${style.heading} ${style.hidden}` : `${style.heading}`
+        const classNameHeadingTwo = hidden ? `${style.heading_2} ${style.hidden}` : `${style.heading_2}`
+
         return (
-            <div className={className}>
-                <p className={style.paragraph}>
-                    {paragraph.part1}
-                </p>
-                <p className={style.paragraph}>
-                    {paragraph.part2}
-                </p>
-            </div>
+            <>
+                {index === 0 ? 
+                    <h1 className={classNameHeadingOne}>{headingList[index]}</h1>
+                    : 
+                    <h2 className={classNameHeadingTwo}>{headingList[index]}</h2>
+                }
+                <div className={style.content}>
+                    <div className={classNameParagraphs}>
+                        <p className={style.paragraph}>
+                            {paragraph.part1}
+                        </p>
+                        <p className={style.paragraph}>
+                            {paragraph.part2}
+                        </p>
+                    </div>
+                </div>
+            </>
+
         )
     })
 
     return (
         <div className={style.container}>
-            <h1 className={style.heading}>Welcome.</h1>
-            <div className={style.content}>
-                {paragraphs}
-            </div>
+            {paragraphs}
         </div>
     )
 }
