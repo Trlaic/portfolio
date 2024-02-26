@@ -9,10 +9,42 @@
 
 .content {
     display: flex;
+    width: 100%;
+    position: relative;
 }
 
+.wrap_paragraphs {
+    transform-origin: 100%;
+    opacity: 0;
+    width: 100%;
+    transition: all .3s linear;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    transform: scaleX(0);
+}
+
+.wrap_paragraphs_active {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.wrap_welcome {
+    transform-origin: 0;
+    opacity: 1;
+    transition: all .3s linear;
+    transform: scaleX(1);
+}
+
+.wrap_welcome_hidden {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+
 .hidden {
-    display: none;
+    opacity: 1;
+    transform: scaleX(1);
 }
 
 .heading {

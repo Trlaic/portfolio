@@ -8,39 +8,38 @@ interface ComponentProps {
 const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) => {
     
     const paragraphs = displayInformationParagraphsArray.map((paragraph, index) => {   
-        let hidden = true
+        let classAction = ''
         if(activeParagraphNumber === index) {
-            hidden = false
+            classAction = index === 0 ? `` : `${style.wrap_paragraphs_active}`
+        } else {
+            classAction = index === 0 ? `${style.wrap_welcome_hidden}` : ''
         }
-        const classNameParagraphs = hidden ? `${style.paragraphs} ${style.hidden}` : `${style.paragraphs}`
-        const classNameHeadingOne = hidden ? `${style.heading} ${style.hidden}` : `${style.heading}`
-        const classNameHeadingTwo = hidden ? `${style.heading_2} ${style.hidden}` : `${style.heading_2}`
-
+        const classStart = index === 0 ? `${style.wrap_welcome}` : `${style.wrap_paragraphs}`
         return (
-            <>
+            <div className={`${classAction} ${classStart}`}>
                 {index === 0 ? 
-                    <h1 className={classNameHeadingOne}>{headingList[index]}</h1>
+                    <h1 className={style.heading}>{headingList[index]}</h1>
                     : 
-                    <h2 className={classNameHeadingTwo}>{headingList[index]}</h2>
+                    <h2 className={style.heading_2}>{headingList[index]}</h2>
                 }
-                <div className={style.content}>
-                    <div className={classNameParagraphs}>
-                        <p className={style.paragraph}>
-                            {paragraph.part1}
-                        </p>
-                        <p className={style.paragraph}>
-                            {paragraph.part2}
-                        </p>
-                    </div>
+                <div className={style.paragraphs}>
+                    <p className={style.paragraph}>
+                        {paragraph.part1}
+                    </p>
+                    <p className={style.paragraph}>
+                        {paragraph.part2}
+                    </p>
                 </div>
-            </>
+            </div>
 
         )
     })
 
     return (
         <div className={style.container}>
-            {paragraphs}
+            <div className={style.content}>
+                {paragraphs}
+            </div>
         </div>
     )
 }
