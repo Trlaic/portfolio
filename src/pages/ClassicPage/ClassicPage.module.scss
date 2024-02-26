@@ -23,7 +23,6 @@
     position: absolute;
     width: 2.25rem;
     height: 30rem;
-    background: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
 .content::after,
@@ -32,29 +31,32 @@
     position: absolute;
     width: 30rem;
     height: 2.25rem;
-    background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
 .content::before {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     top: 0;
     left: 0;
+    background: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
 .content::after {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     top: 0;
     left: 0;
+    background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
 .edge::before {
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     bottom: 0;
     right: 0;
+    background: linear-gradient(to top, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
 .edge::after {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     bottom: 0;
     right: 0;
+    background: linear-gradient(to left, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
