@@ -59,6 +59,11 @@
     margin-bottom: 2rem;
 }
 
+.heading_3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
 .paragraph {
     font-size: 1.5rem;
     line-height: 2.2rem;
@@ -81,4 +86,56 @@
     width: 2px;
     height: 100%;
     background: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.date {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.date_number {
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.tech_container {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.tech {
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    background-color: $color-linear-gradient-second;
+}
+
+.link {
+    position: relative;
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }

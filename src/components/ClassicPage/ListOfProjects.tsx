@@ -19,7 +19,7 @@ const ListOfProjects: React.FC<ComponentProps> = ({setActiveParagraphNumber, act
     
     return (
         <div className={style.container}>
-            <h2 className={style.heading}>Projects</h2>
+            <h2 className={style.heading}>Companies & Projects</h2>
             <ul className={style.list}>
                 <li className={style.list_item}>
                     <p onClick={() => handleClick(1)} className={style.paragraph}>{headingList[1]}</p>
