@@ -9,6 +9,7 @@
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: 3rem;
+    color: #fff;
 }
 
 .list {
@@ -28,6 +29,12 @@
     padding-bottom: 5px;
     display: inline;
     cursor: pointer;
+    color: #ccc;
+    transition: .5s all;
+}
+
+.paragraph:hover {
+    color: #fff;
 }
 
 .paragraph::after {
