@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import React, { Suspense } from "react"
 import LoadingPage from "./pages/LoadingPage"
-import AnimatedPage from "./pages/AnimatedPage/AnimatedPage";
 
-const HomePage = React.lazy(() => import('./pages/HomePage'));
-const ClassicPage = React.lazy(() => import('./pages/ClassicPage/ClassicPage'));
+const HomePage = React.lazy(() => import('./pages/HomePage'))
+const ClassicPage = React.lazy(() => import('./pages/ClassicPage/ClassicPage'))
+const AnimatedPage = React.lazy(() => import('./pages/AnimatedPage/AnimatedPage'))
 
 const App = () => {
   return (
