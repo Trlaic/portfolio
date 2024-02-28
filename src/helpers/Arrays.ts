@@ -1,4 +1,4 @@
-const headingList = ['Welcome.', 'Grid Dynamics', 'Italian', 'French']
+const headingList = ['Welcome.', 'Grid Dynamics', 'Tyllo', 'French']
 
 
 const displayInformationParagraphsArray = [
@@ -14,8 +14,11 @@ const displayInformationParagraphsArray = [
         link: "https://www.ae.com/us/en"
     },
     {
-        part1: "La bellezza della lingua italiana risiede nella sua ricchezza espressiva e nella sua musicalità intrinseca. Con le sue parole melodiose e le sue sfumature linguistiche, l'italiano incanta e coinvolge chiunque lo ascolti o lo legga", 
-        part2: "Da nord a sud, l'Italia è un paese variegato e affascinante, ricco di storia, arte e tradizione. Le sue città storiche, come Roma, Firenze e Venezia"
+        title: "Software Engineer (specialization UI)", 
+        date: "July 2023 - January 2024",
+        description: "Developing -EON- streaming platform with frontend technologies. Worked in a much smaller team comparing to one in -Grid Dynamics-. In addition to regular job responsibilities which are common for most frontend developers, I've had the opportunity to learn more about streaming technologies and to broaden my knowledge in that field. ",
+        tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Vue', 'Jest', 'Karma', 'Git', 'Jira'],
+        link: "https://eon.tv/"
     },
     {
         part1: "La langue française est réputée pour sa beauté et sa richesse", 
