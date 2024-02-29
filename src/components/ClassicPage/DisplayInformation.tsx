@@ -15,6 +15,7 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
             classAction = index === 0 ? `${style.wrap_welcome_hidden}` : ''
         }
         const classStart = index === 0 ? `${style.wrap_welcome}` : `${style.wrap_paragraphs}`
+        
         return (
             <div key={headingList[index]} className={`${classAction} ${classStart}`}>
                 {index === 0 ? 
@@ -35,7 +36,7 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
                         <h3 className={style.heading_3}>{paragraph.title}</h3>
                         <p className={style.date}>Employment period: <span className={style.date_number}>{paragraph.date}</span></p>
                         <p className={style.description}>{paragraph.description}</p>
-                        <div className={style.tech_container}>{paragraph.tech?.map((t) => <div className={style.tech}>{t}</div>)}</div>
+                        <div className={style.tech_container}>{paragraph.tech?.map((t, i) => <div key={`tech-${index}-${i}`} className={style.tech}>{t}</div>)}</div>
                         <a className={style.link} href={paragraph.link} target="_blank">View Site</a>
                     </div> 
                 }
