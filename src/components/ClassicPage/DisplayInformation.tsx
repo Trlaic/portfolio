@@ -1,3 +1,4 @@
+import { useColors } from '../../context/useColors'
 import { displayInformationParagraphsArray, headingList } from '../../helpers/Arrays'
 import style from './DisplayInformation.module.scss'
 
@@ -7,6 +8,8 @@ interface ComponentProps {
 
 const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) => {
     
+    const {colors} = useColors()
+    console.log('colors:', colors)
     const paragraphs = displayInformationParagraphsArray.map((paragraph, index) => {   
         let classAction = ''
         if(activeParagraphNumber === index) {
