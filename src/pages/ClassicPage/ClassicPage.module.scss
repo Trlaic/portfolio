@@ -17,46 +17,84 @@
     position: relative;
 }
 
-.content::before,
-.edge::before {
+.content_before,
+.edge_before {
     content: '';
     position: absolute;
     width: 2.25rem;
     height: 30rem;
 }
 
-.content::after,
-.edge::after {
+.content_after,
+.edge_after {
     content: '';
     position: absolute;
     width: 30rem;
     height: 2.25rem;
 }
 
-.content::before {
+.content_before {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+    background-image: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
-.content::after {
+.content_after {
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
     top: 0;
     left: 0;
-    background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+    background-image: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
-.edge::before {
+.edge_before {
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     bottom: 0;
     right: 0;
-    background: linear-gradient(to top, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+    background-image: linear-gradient(to top, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
-.edge::after {
+.edge_after {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     bottom: 0;
     right: 0;
-    background: linear-gradient(to left, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+    background-image: linear-gradient(to left, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.content_before::before,
+.content_after::before,
+.edge_before::before,
+.edge_after::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.content:hover .content_before::before,
+.content:hover .content_after::before,
+.content:hover .edge_before::before,
+.content:hover .edge_after::before {
+    opacity: 1;
+}
+
+.content_before::before {
+    background-image: linear-gradient(to top, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.content_after::before {
+    background-image: linear-gradient(to left, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.edge_before::before {
+    background-image: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.edge_after::before {
+    background-image: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }

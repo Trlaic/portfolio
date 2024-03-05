@@ -47,24 +47,50 @@
     background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
-.list::before,
-.list::after {
+.list_before,
+.list_after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.list::before {
+.list_before {
     width: .3rem;
     height: 9rem;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    background: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+    background-image: linear-gradient(to bottom, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
-.list::after {
+.list_after {
     width: 9rem;
     height: .3rem;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
-    background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+    background-image: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.list_before::before,
+.list_after::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+}
+
+.list_before::before {
+    background-image: linear-gradient(to top, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.list_after::before {
+    background-image: linear-gradient(to left, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
+}
+
+.list:hover .list_before::before,
+.list:hover .list_after::before {
+    opacity: 1;
 }
