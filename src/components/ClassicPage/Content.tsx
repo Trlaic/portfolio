@@ -13,7 +13,7 @@ const Content = () => {
 
     return (
         <div className={style.container}>
-            <img onClick={handleImageClick} className={style.image} src="../../../public/home_page.png" alt="Home" />
+            <img onClick={handleImageClick} className={style.image} src="./home_page.png" alt="Home" />
             <DisplayInformation activeParagraphNumber={paragraph}/>
             <ListOfProjects activeParagraphNumber={paragraph} setActiveParagraphNumber={setParagraph}/>
         </div>
