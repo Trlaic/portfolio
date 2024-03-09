@@ -10,11 +10,35 @@
     position: absolute;
     top: 5rem;
     left: 5rem;
+    width: 6.4rem;
+    height: 6.4rem;
+
     cursor: pointer;
     transition: .4s all;
-
 }
 
 .image:hover {
     transform: scale(1.2);
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        transform: translateY(-7.5rem);
+    }
+
+    .image {
+        top: 12.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        transform: translateY(-6rem);
+    }
+
+    .image {
+        top: 11rem;
+    }
 }

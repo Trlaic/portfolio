@@ -9,6 +9,12 @@
     font-size: 10px;
 }
 
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: 5px;
+    }
+}
+
 html,
 body {
     font-family: "Playfair Display", serif;

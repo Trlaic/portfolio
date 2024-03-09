@@ -94,3 +94,12 @@
 .list:hover .list_after::before {
     opacity: 1;
 }
+
+
+@media only screen and (max-width: 450px) {
+    .container {
+        flex: 0 1 0%;
+        margin-left: 0rem;
+        margin-bottom: 5rem;
+    }
+}

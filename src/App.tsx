@@ -15,7 +15,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />}/>
             <Route path="/resume" element={<ClassicPage />}/>
-            <Route path="resume-animated" element={<AnimatedPage />}/>
+            <Route path="/resume-animated" element={<AnimatedPage />}/>
           </Routes>
         </Suspense>
       </ColorsProvider>

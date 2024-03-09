@@ -143,3 +143,12 @@
     height: 1.5px;
     background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
+
+@media only screen and (max-width: 450px) {
+    .container {
+        flex: 0 1 0%;
+        padding-right: 5rem;
+        margin-right: 0rem;
+        transform: translateY(-1rem);
+    }
+}
