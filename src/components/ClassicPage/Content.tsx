@@ -2,13 +2,15 @@ import { useState } from 'react'
 import style from './Content.module.scss'
 import DisplayInformation from './DisplayInformation'
 import ListOfProjects from './ListOfProjects'
+import { useNavigate } from 'react-router-dom'
 
 const Content = () => {
 
+    const navigate = useNavigate()
     const [paragraph, setParagraph] = useState(0)
 
     const handleImageClick = function() {
-        setParagraph(0)
+        navigate('/')
     }
 
     return (

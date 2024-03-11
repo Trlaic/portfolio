@@ -21,20 +21,30 @@
     transform: scale(1.2);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 900px) {
     .container {
-        transform: translateY(-7.5rem);
+        transform: translateY(-5rem);
     }
 
     .image {
-        top: 12.5rem;
+        top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        transform: translateY(2rem);
+    }
+
+    .image {
+        top: 3rem;
     }
 }
 
 @media only screen and (max-width: 450px) {
     .container {
-        flex-direction: column-reverse;
-        justify-content: center;
         transform: translateY(-6rem);
     }
 

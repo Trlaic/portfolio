@@ -32,3 +32,13 @@
 .margin_right {
     margin-right: 1rem;
 }
+
+@media only screen and (max-width: 480px) {
+    .margin_left {
+        margin-left: 0;
+    }
+
+    .margin_right {
+        margin-right: 0;
+    }
+}
