@@ -33,6 +33,37 @@
     }
 }
 
+@media only screen and (min-width: 1250px) {
+    :root {
+        font-size: 10.5px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-height: 700px) and (min-width: 1160px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-height: 1000px) and (min-width: 1160px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (min-height: 1080px) and (min-width: 1920px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
 html,
 body {
     font-family: "Playfair Display", serif;

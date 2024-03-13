@@ -35,16 +35,6 @@
     .container {
         flex-direction: column-reverse;
         justify-content: center;
-        transform: translateY(2rem);
-    }
-
-    .image {
-        top: 3rem;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .container {
         transform: translateY(-6rem);
     }
 
