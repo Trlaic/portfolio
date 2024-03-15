@@ -1,4 +1,5 @@
 import { displayInformationParagraphsArray, headingList } from '../../helpers/Arrays'
+import HeadingAnimation from '../HeadingAnimation/HeadingAnimation'
 import style from './DisplayInformation.module.scss'
 
 interface ComponentProps {
@@ -19,7 +20,7 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
         return (
             <div key={headingList[index]} className={`${classAction} ${classStart}`}>
                 {index === 0 ? 
-                    <h1 className={style.heading}>{headingList[index]}</h1>
+                    <HeadingAnimation />
                     : 
                     <h2 className={style.heading_2}>{headingList[index]}</h2>
                 }

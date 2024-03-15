@@ -1,9 +1,9 @@
-const headingList = ['Welcome.', 'Grid Dynamics', 'Tyllo']
+const headingList = ['Welcome!', 'Grid Dynamics', 'Tyllo']
 
 
 const displayInformationParagraphsArray = [
     {
-        part1: "Hey, I'm Igor Trlaic, a frontend developer from Belgrade, Serbia, with 2.5 years of experience. Beside working in a corporative world on the streaming platform and an e-commerce site, I've also done several projects by myself.",
+        part1: "Hello! I'm Igor Trlaic, frontend developer based in Belgrade, Serbia, with 2.5 years of experience. Beside working in a corporative world on the streaming platform and an e-commerce site, I've also done several projects by myself.",
         part2: "Currently, I'm diving into backend technologies and Three.js because I want to create comprehensive web experiences."
     },
     {
