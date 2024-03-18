@@ -35,8 +35,9 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
                     </div> :
                     <div className={style.paragraphs}>
                         <h3 className={style.heading_3}>{paragraph.title}</h3>
-                        <p className={style.date}>Employment period: <span className={style.date_number}>{paragraph.date}</span></p>
+                        <p className={style.date}>{paragraph.employment}<span className={style.date_number}>{paragraph.date}</span></p>
                         <p className={style.description}>{paragraph.description}</p>
+                        <p className={style.description}>{paragraph.descriptionNote}</p>
                         <div className={style.tech_container}>{paragraph.tech?.map((t, i) => <div key={`tech-${index}-${i}`} className={style.tech}>{t}</div>)}</div>
                         <a className={style.link} href={paragraph.link} target="_blank">View Site</a>
                     </div> 

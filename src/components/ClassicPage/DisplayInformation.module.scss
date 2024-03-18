@@ -104,7 +104,7 @@
     display: flex;
     color: #fff;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-size: 1.1rem;
     margin-bottom: 3rem;
 }
@@ -113,6 +113,10 @@
     padding: .5rem 1rem;
     border-radius: 2rem;
     background-color: $color-linear-gradient-second;
+}
+
+.tech:not(:last-child) {
+    margin-right: 1rem;
 }
 
 .link {
