@@ -7,6 +7,12 @@
 .image {
     width: 4rem;
     margin-right: .8rem;
+    filter: grayscale(1);
+    transition: all .3s;
+}
+
+.image:hover {
+    filter: grayscale(0);
 }
 
 
