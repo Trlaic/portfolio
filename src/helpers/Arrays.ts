@@ -1,4 +1,4 @@
-const headingList = ['Welcome!', 'Tyllo', 'Grid Dynamics', 'Cyberpunk Drive']
+const headingList = ['Welcome!', 'Tyllo', 'Grid Dynamics', 'Cyberpunk Drive', 'Horror MM']
 
 
 const displayInformationParagraphsArray = [
@@ -28,6 +28,12 @@ const displayInformationParagraphsArray = [
         descriptionNote: "NOTE: I've had several objections that the app is not running smoothly in Google Chrome, if that is the case for you, try to open the link in Firefox, Edge or Safari.",
         tech: ['HTML', 'CSS', 'JavaScript', 'Three.js'],
         link: "https://hrtkovci-cyberpunk.netlify.app/"
+    },
+    {
+        title: "Little web game",
+        description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum",
+        tech: ['React', 'TypeScript', 'SCSS', 'Vite'],
+        link: "https://horror-memorygame.netlify.app/"
     }
 
 ]
