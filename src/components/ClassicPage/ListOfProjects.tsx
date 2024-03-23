@@ -32,6 +32,9 @@ const ListOfProjects: React.FC<ComponentProps> = ({setActiveParagraphNumber, act
                 <li className={style.list_item}>
                     <p onClick={() => handleClick(3)} className={style.paragraph}>{headingList[3]}</p>
                 </li>
+                <li className={style.list_item}>
+                    <p onClick={() => handleClick(4)} className={style.paragraph}>{headingList[4]}</p>
+                </li>
             </ul>
         </div>
     )
