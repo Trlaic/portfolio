@@ -63,8 +63,12 @@
     line-height: 2.2rem;
 }
 
-.paragraph:not(:last-child) {
+.paragraph:first-child {
     margin-bottom: 2rem;
+}
+
+.paragraph:nth-child(2n) {
+    margin-bottom: 1rem;
 }
 
 .paragraphs {
@@ -102,6 +106,7 @@
 
 .tech_container {
     display: flex;
+    flex-wrap: wrap;
     color: #fff;
     width: 100%;
     justify-content: flex-start;
@@ -111,6 +116,7 @@
 
 .tech {
     padding: .5rem 1rem;
+    margin-bottom: 5px;
     border-radius: 2rem;
     background-color: $color-linear-gradient-second;
 }

@@ -32,6 +32,9 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
                         <p className={style.paragraph}>
                             {paragraph.part2}
                         </p>
+                        <p className={style.paragraph}>
+                            {paragraph.part3}
+                        </p>
                     </div> :
                     <div className={style.paragraphs}>
                         <h3 className={style.heading_3}>{paragraph.title}</h3>

@@ -4,7 +4,8 @@ const headingList = ['Welcome!', 'Tyllo', 'Grid Dynamics', 'Cyberpunk Drive', 'H
 const displayInformationParagraphsArray = [
     {
         part1: "Hello! I'm Igor Trlaic, a frontend developer based in Belgrade, Serbia, with 2.5 years of professional experience. Beside working in a corporative world on the streaming platform and an e-commerce site, I've also done several projects on my own.",
-        part2: "Currently, I'm diving into backend technologies and Three.js because I want to create comprehensive web experiences."
+        part2: "Currently, I'm diving into backend technologies and Three.js because I want to create comprehensive web experiences.",
+        part3: "Feel free to check out my github and linkedin profile if you'd like to see a bit more."
     },
     {
         title: "Software Engineer (specialization UI)",
@@ -18,7 +19,7 @@ const displayInformationParagraphsArray = [
         title: "Junior Software Engineer (specialization UI)",
         employment: 'Employment period: ',
         date: "February 2022 - April 2023",
-        description: "Developing -American Eagle- website with HTML, CSS, JavaScript and TypeScript. Collaborated with designers and backend developers for seamless integration and optimal performance. Utilized Ember.js for enhanced user experience and streamlined development. Conducted thorough testing and debugging for cross-browser compatibility. Actively engaged in code reviews and contributed to improving coding standards and best practices within the team.",
+        description: "Developing -American Eagle- website. Collaborated with designers and backend developers for seamless integration and optimal performance. Utilized Ember.js for enhanced user experience and streamlined development. Actively engaged in code reviews and contributed to improving coding standards and best practices within the team.",
         tech: ['HTML', 'SCSS', 'JavaScript', 'TypeScript', 'Ember', 'Jest', 'BitBucket', 'Jira'],
         link: "https://www.ae.com/us/en"
     },
@@ -30,8 +31,8 @@ const displayInformationParagraphsArray = [
         link: "https://hrtkovci-cyberpunk.netlify.app/"
     },
     {
-        title: "Little web game",
-        description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum",
+        title: "Memory game",
+        description: "I've done this game mainly to have a platform for exercising my React + Typescript and to have a fun way to express some creativity (if there is any) along the way. Even though I intended it to be a horror game at first, it drifted away towards absurdity.",
         tech: ['React', 'TypeScript', 'SCSS', 'Vite'],
         link: "https://horror-memorygame.netlify.app/"
     }
