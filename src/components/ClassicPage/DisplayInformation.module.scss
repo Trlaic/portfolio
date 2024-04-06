@@ -156,3 +156,31 @@
         transform: translateY(-1rem);
     }
 }
+
+
+.button {
+    background-image: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 51%, $color-linear-gradient-first 100%);
+    margin: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.gameTitleContainer {
+    display: flex;
+    align-items: center;
+}

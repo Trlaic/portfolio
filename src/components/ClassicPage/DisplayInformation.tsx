@@ -42,7 +42,7 @@ const DisplayInformation: React.FC<ComponentProps> = ({activeParagraphNumber}) =
                         <p className={style.description}>{paragraph.description}</p>
                         <p className={style.description}>{paragraph.descriptionNote}</p>
                         <div className={style.tech_container}>{paragraph.tech?.map((t, i) => <div key={`tech-${index}-${i}`} className={style.tech}>{t}</div>)}</div>
-                        <a className={style.link} href={paragraph.link} target="_blank">View Site</a>
+                        <a className={style.link} href={paragraph.link} target="_blank">{ paragraph.type === 'company' ? 'View Site' : 'Open The Game'}</a>
                     </div> 
                 }
             </div>
