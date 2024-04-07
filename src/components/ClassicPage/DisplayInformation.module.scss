@@ -148,16 +148,6 @@
     background: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 100%);
 }
 
-@media only screen and (max-width: 720px) {
-    .container {
-        flex: 0 1 0%;
-        padding-right: 5rem;
-        margin-right: 0rem;
-        transform: translateY(-1rem);
-    }
-}
-
-
 .button {
     background-image: linear-gradient(to right, $color-linear-gradient-first 0%, $color-linear-gradient-second 51%, $color-linear-gradient-first 100%);
     margin: 1rem;
@@ -183,4 +173,45 @@
 .gameTitleContainer {
     display: flex;
     align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+    .container {
+        flex: 0 1 0%;
+        padding-right: 5rem;
+        margin-right: 0rem;
+        transform: translateY(-1rem);
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .description {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading_2 {
+        font-size: 4rem;
+    }
+
+    .heading_3 {
+        font-size: 2.2rem;
+    }
+
+    .description {
+        font-size: 1.9rem;
+    }
+
+    .date {
+        font-size: 1.9rem;
+    }
+
+    .tech_container {
+        font-size: 1.5rem;
+    }
+
+    .link {
+        font-size: 2rem;
+    }
 }

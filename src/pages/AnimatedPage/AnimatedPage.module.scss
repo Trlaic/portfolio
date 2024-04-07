@@ -29,3 +29,19 @@
 .paragraph:last-of-type {
     margin-bottom: 8rem;
 }
+
+@media only screen and (max-width: 430px) {
+    .heading {
+        font-size: 5.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .paragraph {
+        font-size: 2rem;
+    }
+
+
+    .paragraph:last-of-type {
+        margin-bottom: 3.5rem;
+    }
+}

@@ -103,6 +103,19 @@
     }
 }
 
+@media only screen and (max-width: 620px) {
+    .list {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .list {
+        font-size: 2rem;
+    }
+}
+
+
 @media only screen and (max-width: 450px) {
     .container {
         flex: 0 1 0%;
