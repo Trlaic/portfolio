@@ -45,3 +45,15 @@
         margin-bottom: 3.5rem;
     }
 }
+
+@media only screen and (max-width: 330px) {
+    .heading {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .paragraph {
+        font-size: 1.8rem;
+    }
+
+}
