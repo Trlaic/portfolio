@@ -188,6 +188,10 @@
     .description {
         font-size: 1.7rem;
     }
+
+    .paragraph {
+        font-size: 1.7rem;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -201,6 +205,11 @@
 
     .description {
         font-size: 1.9rem;
+    }
+
+    .paragraph {
+        font-size: 1.9rem;
+        line-height: 2.2rem;
     }
 
     .date {
