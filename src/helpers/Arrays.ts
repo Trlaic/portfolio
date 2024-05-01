@@ -1,4 +1,4 @@
-const headingList = ['Welcome!', 'Tyllo', 'Grid Dynamics', 'Cyberpunk Drive', 'Horror MM']
+const headingList = ['Welcome!', 'Tyllo', 'Grid Dynamics, Kingston', 'Grid Dynamics, Belgrade', 'Cyberpunk Drive', 'Horror MM']
 
 
 const displayInformationParagraphsArray = [
@@ -18,9 +18,18 @@ const displayInformationParagraphsArray = [
     },
     {
         type: "company",
+        title: "Software Engineer (specialization UI - Team Lead)",
+        employment: 'Employment period: ',
+        date: "June 2022 - June 2023",
+        description: "Led UI team in a small sub-project related to implementing live video communication between customer and associate. Provided mentorship and guidance to frontend interns within the company, aiding in their skill development and project execution. Collaborated closely with product managers and vendor party to understand project requirements and translate them into actionable plans.",
+        tech: ['HTML', 'SCSS', 'JavaScript', 'TypeScript', 'React', 'Jest', 'BitBucket', 'Jira'],
+        link: "https://www.ae.com/us/en"
+    },
+    {
+        type: "company",
         title: "Junior Software Engineer (specialization UI)",
         employment: 'Employment period: ',
-        date: "February 2022 - June 2023",
+        date: "October 2021 - June 2022",
         description: "Developing -American Eagle- website. Collaborated with designers and backend developers for seamless integration and optimal performance. Utilized React for enhanced user experience and streamlined development. Actively engaged in code reviews and contributed to improving coding standards and best practices within the team.",
         tech: ['HTML', 'SCSS', 'JavaScript', 'TypeScript', 'React', 'Jest', 'BitBucket', 'Jira'],
         link: "https://www.ae.com/us/en"
