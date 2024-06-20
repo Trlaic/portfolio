@@ -3,7 +3,7 @@ const headingList = ['Welcome!', 'Tyllo', 'Grid Dynamics, Kingston', 'Grid Dynam
 
 const displayInformationParagraphsArray = [
     {
-        part1: "Hello! I'm Igor Trlaic, a frontend developer based in Belgrade, Serbia, with 2.5 years of professional experience. Beside working in a corporative world on the streaming platform and an e-commerce site, I've also done several projects on my own.",
+        part1: "Hello! I'm Igor Trlaic, a frontend developer based in Belgrade, Serbia, with 3 years of professional experience. Beside working in a corporative world on the streaming platform and an e-commerce site, I've also done several projects on my own.",
         part2: "Currently, I'm diving into backend technologies and Three.js because I want to create comprehensive web experiences.",
         part3: "Feel free to check out my github and linkedin profile if you'd like to see a bit more."
     },
@@ -11,7 +11,7 @@ const displayInformationParagraphsArray = [
         type: "company",
         title: "Software Engineer (specialization UI)",
         employment: 'Employment period: ',
-        date: "July 2023 - March 2024",
+        date: "July 2023 - present",
         description: "Developing -EON- streaming platform with frontend technologies. Worked in a much smaller team comparing to one in -Grid Dynamics-. In addition to regular job responsibilities which are common for most frontend developers, I've had the opportunity to learn more about streaming technologies and to broaden my knowledge in that field. ",
         tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Vue', 'Jest', 'Karma', 'Git', 'Jira'],
         link: "https://eon.tv/"
