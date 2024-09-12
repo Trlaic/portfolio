@@ -11,7 +11,7 @@ const displayInformationParagraphsArray = [
         type: "company",
         title: "Software Engineer (specialization UI)",
         employment: 'Employment period: ',
-        date: "July 2023 - present",
+        date: "July 2023 - July 2024",
         description: "Developing -EON- streaming platform with frontend technologies. Worked in a much smaller team comparing to one in -Grid Dynamics-. In addition to regular job responsibilities which are common for most frontend developers, I've had the opportunity to learn more about streaming technologies and to broaden my knowledge in that field. ",
         tech: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Vue', 'Jest', 'Karma', 'Git', 'Jira'],
         link: "https://eon.tv/"
